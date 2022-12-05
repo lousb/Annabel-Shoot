@@ -15,6 +15,9 @@ header, .header-physical{
     align-items: center;
     pointer-events: none;
 }
+header{
+    position: fixed;
+}
 .logo{
     background-color: transparent;
     background-image: url('assets/EsotericLogoRingAllign.png');
