@@ -2,6 +2,7 @@
 body{
     width:100vw;
     overflow-x: hidden;
+    width: 100vw;
 }
 header, .header-physical{
     position: absolute;
@@ -16,7 +17,16 @@ header, .header-physical{
     pointer-events: none;
 }
 header{
+    margin-top: 50px;
     position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.desc p{
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 .logo{
     background-color: transparent;
@@ -25,6 +35,8 @@ header{
     width: 200px;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 40px;
+    
 }
 .photos{
     display: flex;
@@ -47,7 +59,8 @@ ul {
     list-style-type: none;
 }
 p{
-    font-family: 'VT323', monospace;
+    font-family: 'Inter', sans-serif;
+
     padding-left: 20px;
 }
 .desc{
@@ -60,7 +73,8 @@ p{
     max-width: 70vw;
     padding-left: 20px;
     color: white;
-    font-family: 'VT323', monospace;
+    font-family: 'Inter', sans-serif;
+
     font-size: 4em;
 }
 .vision{
@@ -71,6 +85,55 @@ p{
     width: 100%;
     background-image: url('assets/5488082.jpg');
 }
+.first-page{
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+}
+.first-page h1{
+    margin: 0;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 900;
+    letter-spacing: -5px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.first-page p{
+    margin-top: 5em;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+}
+.first-page-images{
+    position: absolute;
+    top:0;
+    left: 0;
+    height:90vh;
+    width:100%;
+
+}
+.crew{
+    display: flex;
+    flex-direction: row;
+}
+.roles, .names{
+    display: flex;
+    flex-direction: column;
+}
+.roles span, .names span{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.names span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 @media only screen and (max-width: 700px) {
     .photos{
         flex-direction: row;
